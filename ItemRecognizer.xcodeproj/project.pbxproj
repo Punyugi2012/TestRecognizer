@@ -12,6 +12,7 @@
 		B837D2B4212554C90045EA8A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B837D2B2212554C90045EA8A /* Main.storyboard */; };
 		B837D2B6212554CB0045EA8A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B837D2B5212554CB0045EA8A /* Assets.xcassets */; };
 		B837D2B9212554CB0045EA8A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B837D2B7212554CB0045EA8A /* LaunchScreen.storyboard */; };
+		B837D2C1212561460045EA8A /* Inceptionv3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = B837D2C0212561450045EA8A /* Inceptionv3.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		B837D2B5212554CB0045EA8A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B837D2B8212554CB0045EA8A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B837D2BA212554CB0045EA8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B837D2C0212561450045EA8A /* Inceptionv3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Inceptionv3.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 		B837D2AD212554C90045EA8A /* ItemRecognizer */ = {
 			isa = PBXGroup;
 			children = (
+				B837D2C0212561450045EA8A /* Inceptionv3.mlmodel */,
 				B837D2AE212554C90045EA8A /* AppDelegate.swift */,
 				B837D2B0212554C90045EA8A /* ViewController.swift */,
 				B837D2B2212554C90045EA8A /* Main.storyboard */,
@@ -136,6 +139,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B837D2B1212554C90045EA8A /* ViewController.swift in Sources */,
+				B837D2C1212561460045EA8A /* Inceptionv3.mlmodel in Sources */,
 				B837D2AF212554C90045EA8A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -281,6 +285,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UWL7R783S6;
 				INFOPLIST_FILE = ItemRecognizer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -298,6 +303,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UWL7R783S6;
 				INFOPLIST_FILE = ItemRecognizer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

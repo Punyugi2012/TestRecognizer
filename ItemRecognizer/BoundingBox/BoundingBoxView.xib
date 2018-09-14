@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="BoundingBoxView" customModule="ItemRecognizer">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YEp-2L-RYj" userLabel="info">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="20.5"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="4G2-wK-JEE">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="20.5"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="5" translatesAutoresizingMaskIntoConstraints="NO" id="MQH-pg-Gtc">
+                                    <rect key="frame" x="0.0" y="0.0" width="187.5" height="20.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="pct" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="2" translatesAutoresizingMaskIntoConstraints="NO" id="gZI-tK-Fx8">
+                                    <rect key="frame" x="187.5" y="0.0" width="187.5" height="20.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.12549019607843137" green="0.69803921568627447" blue="0.66666666666666663" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="4G2-wK-JEE" firstAttribute="top" secondItem="YEp-2L-RYj" secondAttribute="top" id="DVY-AT-BLn"/>
+                        <constraint firstItem="4G2-wK-JEE" firstAttribute="leading" secondItem="YEp-2L-RYj" secondAttribute="leading" id="XaM-Rn-15B"/>
+                        <constraint firstAttribute="trailing" secondItem="4G2-wK-JEE" secondAttribute="trailing" id="d2z-cg-3aI"/>
+                        <constraint firstAttribute="bottom" secondItem="4G2-wK-JEE" secondAttribute="bottom" id="gku-IL-kpW"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="YEp-2L-RYj" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="8b6-j2-5BE"/>
+                <constraint firstItem="YEp-2L-RYj" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="LE0-oD-Ksz"/>
+                <constraint firstItem="YEp-2L-RYj" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="gC1-QF-dYi"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="nameLbl" destination="MQH-pg-Gtc" id="Nck-rq-TK5"/>
+                <outlet property="pctLbl" destination="gZI-tK-Fx8" id="2iO-PS-2vc"/>
+            </connections>
+            <point key="canvasLocation" x="73" y="-22"/>
+        </view>
+    </objects>
+</document>

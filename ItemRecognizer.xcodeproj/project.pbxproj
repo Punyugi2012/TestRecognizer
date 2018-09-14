@@ -7,15 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B80D9CA1214A68D100A3A6E7 /* MyCustomObjectDetector.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = B80D9CA0214A68D100A3A6E7 /* MyCustomObjectDetector.mlmodel */; };
+		B837D26F2132C4B10092DBDD /* Predictions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B837D26E2132C4B10092DBDD /* Predictions.swift */; };
 		B837D2AF212554C90045EA8A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B837D2AE212554C90045EA8A /* AppDelegate.swift */; };
 		B837D2B1212554C90045EA8A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B837D2B0212554C90045EA8A /* ViewController.swift */; };
 		B837D2B4212554C90045EA8A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B837D2B2212554C90045EA8A /* Main.storyboard */; };
 		B837D2B6212554CB0045EA8A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B837D2B5212554CB0045EA8A /* Assets.xcassets */; };
 		B837D2B9212554CB0045EA8A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B837D2B7212554CB0045EA8A /* LaunchScreen.storyboard */; };
-		B837D2C1212561460045EA8A /* Inceptionv3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = B837D2C0212561450045EA8A /* Inceptionv3.mlmodel */; };
+		B8D5F41E214BAF2900999BC4 /* BoundingBoxView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8D5F41D214BAF2900999BC4 /* BoundingBoxView.xib */; };
+		B8D5F420214BAF8300999BC4 /* BoundingBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8D5F41F214BAF8300999BC4 /* BoundingBoxView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B80D9CA0214A68D100A3A6E7 /* MyCustomObjectDetector.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = MyCustomObjectDetector.mlmodel; sourceTree = "<group>"; };
+		B837D26E2132C4B10092DBDD /* Predictions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Predictions.swift; sourceTree = "<group>"; };
 		B837D2AB212554C90045EA8A /* ItemRecognizer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ItemRecognizer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B837D2AE212554C90045EA8A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B837D2B0212554C90045EA8A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -23,7 +28,8 @@
 		B837D2B5212554CB0045EA8A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B837D2B8212554CB0045EA8A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B837D2BA212554CB0045EA8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B837D2C0212561450045EA8A /* Inceptionv3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Inceptionv3.mlmodel; sourceTree = "<group>"; };
+		B8D5F41D214BAF2900999BC4 /* BoundingBoxView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BoundingBoxView.xib; sourceTree = "<group>"; };
+		B8D5F41F214BAF8300999BC4 /* BoundingBoxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoundingBoxView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,51 @@
 		B837D2AD212554C90045EA8A /* ItemRecognizer */ = {
 			isa = PBXGroup;
 			children = (
-				B837D2C0212561450045EA8A /* Inceptionv3.mlmodel */,
+				B8D5F423214BBA0600999BC4 /* HelpingClasses */,
+				B8D5F422214BB9F300999BC4 /* Views */,
+				B8D5F421214BB9DF00999BC4 /* Controllers */,
+				B8D5F41C214BAF0900999BC4 /* BoundingBoxView */,
+				B80D9CA0214A68D100A3A6E7 /* MyCustomObjectDetector.mlmodel */,
 				B837D2AE212554C90045EA8A /* AppDelegate.swift */,
-				B837D2B0212554C90045EA8A /* ViewController.swift */,
-				B837D2B2212554C90045EA8A /* Main.storyboard */,
 				B837D2B5212554CB0045EA8A /* Assets.xcassets */,
-				B837D2B7212554CB0045EA8A /* LaunchScreen.storyboard */,
 				B837D2BA212554CB0045EA8A /* Info.plist */,
 			);
 			path = ItemRecognizer;
+			sourceTree = "<group>";
+		};
+		B8D5F41C214BAF0900999BC4 /* BoundingBoxView */ = {
+			isa = PBXGroup;
+			children = (
+				B8D5F41D214BAF2900999BC4 /* BoundingBoxView.xib */,
+				B8D5F41F214BAF8300999BC4 /* BoundingBoxView.swift */,
+			);
+			name = BoundingBoxView;
+			path = BoundingBox;
+			sourceTree = "<group>";
+		};
+		B8D5F421214BB9DF00999BC4 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B837D2B0212554C90045EA8A /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		B8D5F422214BB9F300999BC4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B837D2B2212554C90045EA8A /* Main.storyboard */,
+				B837D2B7212554CB0045EA8A /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B8D5F423214BBA0600999BC4 /* HelpingClasses */ = {
+			isa = PBXGroup;
+			children = (
+				B837D26E2132C4B10092DBDD /* Predictions.swift */,
+			);
+			path = HelpingClasses;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +169,7 @@
 			files = (
 				B837D2B9212554CB0045EA8A /* LaunchScreen.storyboard in Resources */,
 				B837D2B6212554CB0045EA8A /* Assets.xcassets in Resources */,
+				B8D5F41E214BAF2900999BC4 /* BoundingBoxView.xib in Resources */,
 				B837D2B4212554C90045EA8A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,8 +181,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B837D26F2132C4B10092DBDD /* Predictions.swift in Sources */,
 				B837D2B1212554C90045EA8A /* ViewController.swift in Sources */,
-				B837D2C1212561460045EA8A /* Inceptionv3.mlmodel in Sources */,
+				B8D5F420214BAF8300999BC4 /* BoundingBoxView.swift in Sources */,
+				B80D9CA1214A68D100A3A6E7 /* MyCustomObjectDetector.mlmodel in Sources */,
 				B837D2AF212554C90045EA8A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

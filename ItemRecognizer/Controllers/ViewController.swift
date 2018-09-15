@@ -13,6 +13,8 @@ import CoreML
 
 class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDelegate {
     
+    @IBOutlet weak var nbsBBLbl: UILabel!
+    
     let captureSession = AVCaptureSession()
     
     var requests = [VNRequest]()
@@ -23,6 +25,7 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        nbsBBLbl.text = "0 BB"
         setUpInput()
         setupPreview()
         setUpOutput()
@@ -81,6 +84,13 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
             for prediction in predictions {
                 self.highlightArea(boundingRect: prediction.boundingBox, classIndex: prediction.labelIndex, confidence: prediction.confidence)
             }
+            var count = 0
+            for subView in self.view.subviews {
+                if subView.tag == 20 {
+                    count += 1
+                }
+            }
+            self.nbsBBLbl.text = "\(count) BB"
         }
     }
     

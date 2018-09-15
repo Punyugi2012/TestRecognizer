@@ -73,22 +73,13 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
             else { return }
         
         DispatchQueue.main.async {
-            if !predictions.isEmpty {
-                for subview in self.view.subviews {
-                    if subview.tag == 20 {
-                        subview.removeFromSuperview()
-                    }
-                }
-                for prediction in predictions {
-                    self.highlightArea(boundingRect: prediction.boundingBox, classIndex: prediction.labelIndex, confidence: prediction.confidence)
+            for subview in self.view.subviews {
+                if subview.tag == 20 {
+                    subview.removeFromSuperview()
                 }
             }
-            else {
-                for subview in self.view.subviews {
-                    if subview.tag == 20 {
-                        subview.removeFromSuperview()
-                    }
-                }
+            for prediction in predictions {
+                self.highlightArea(boundingRect: prediction.boundingBox, classIndex: prediction.labelIndex, confidence: prediction.confidence)
             }
         }
     }
